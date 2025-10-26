@@ -106,7 +106,7 @@ void Huffman::createCodes()
     generateCode(root, "");
 }
 
-
+//Done
 int Huffman::binaryToDecimal(string binary)
 {
     int ans = 0;
@@ -117,7 +117,7 @@ int Huffman::binaryToDecimal(string binary)
     return ans;
 }
 
-
+//Done
 string Huffman::decimalToBinary(int num)
 {
     string temp = "", ans = "";
@@ -132,7 +132,7 @@ string Huffman::decimalToBinary(int num)
     return ans;
 }
 
-
+//Done
 void Huffman::saveEncodedFile()
 {
     // Open input and output files
@@ -196,7 +196,7 @@ void Huffman::saveEncodedFile()
     outFile.close();
 }
 
-
+//Done
 void Huffman::getTreeFromEncodedFile()
 {
     inFile.open(inFileName, ios::in | ios::binary); // open input file
@@ -234,7 +234,7 @@ void Huffman::getTreeFromEncodedFile()
     inFile.close();
 }
 
-
+//Done
 void Huffman::saveDecodedFile()
 {
     inFile.open(inFileName, ios::in | ios::binary);
@@ -292,7 +292,7 @@ void Huffman::saveDecodedFile()
     outFile.close();
 }
 
-
+//Done
 void Huffman::compress()
 {
     createMinHeap();
@@ -301,7 +301,7 @@ void Huffman::compress()
     saveEncodedFile();
 }
 
-
+//Done
 void Huffman::decompress()
 {
     getTreeFromEncodedFile();
